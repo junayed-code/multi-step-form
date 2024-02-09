@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  min-height: 13rem;
+  padding: 2.25rem 1.25rem;
+  justify-content: center;
+  color: hsl(217, 100%, 97%);
+  background-color: hsl(243, 100%, 62%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url("../../assets/images/bg-sidebar-mobile.svg");
+  gap: 1.25rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    padding: 2rem;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 18rem;
+    padding: 2.25rem;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../../assets/images/bg-sidebar-desktop.svg");
+  }
+}
