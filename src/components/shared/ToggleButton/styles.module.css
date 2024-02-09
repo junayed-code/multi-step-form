@@ -1,0 +1,43 @@
+.toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.toggle label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle label::before {
+  content: "";
+  width: 2.5em;
+  height: 1.25em;
+  border-radius: 2em;
+  background-color: rgb(30 27 75);
+}
+
+.toggle label::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0.15em;
+  transition: all 200ms ease-in-out;
+}
+
+.toggle input:checked + label::after {
+  transform: translateX(125%);
+}
