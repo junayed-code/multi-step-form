@@ -1,6 +1,6 @@
 function Main({ children }) {
   return (
-    <main className="flex justify-center items-center min-h-screen">
+    <main className="lg:flex justify-center items-center min-h-screen bg-indigo-50 lg:py-8">
       {children}
     </main>
   );
