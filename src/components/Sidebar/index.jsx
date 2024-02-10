@@ -13,8 +13,8 @@ function Step({ index, title, active }) {
         {index}
       </div>
       <div className="uppercase text-center lg:text-left font-medium hidden md:block">
-        <span className="text-indigo-300">step {index}</span>
-        <h5 className="text-lg">{title}</h5>
+        <span className="text-indigo-300 text-[15px]">step {index}</span>
+        <h5 className="text-[17px]">{title}</h5>
       </div>
     </div>
   );

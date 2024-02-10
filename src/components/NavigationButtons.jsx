@@ -23,7 +23,7 @@ function NavigationButtons({ dispatch, step }) {
       {/* Next Step Button */}
       <button
         onClick={() => dispatch({ type: "next" })}
-        className={"px-4 py-2.5 bg-cyan-950 hover:bg-cyan-800 text-slate-100 rounded-md ml-auto duration-150".concat(
+        className={"px-4 py-2.5 w-[7.25rem] bg-cyan-950 hover:bg-cyan-800 text-slate-100 rounded-md ml-auto duration-150".concat(
           ["summary", "confirmation"].includes(step) ? " hidden" : ""
         )}
       >
@@ -33,7 +33,7 @@ function NavigationButtons({ dispatch, step }) {
       {/* Confirm button */}
       <button
         onClick={() => dispatch({ type: "confirm" })}
-        className={"px-6 py-2.5 bg-indigo-600 hover:opacity-70 text-slate-100 rounded-md ml-auto duration-200".concat(
+        className={"px-4 py-2.5 w-[7.25rem] bg-indigo-600 hover:opacity-70 text-slate-100 rounded-md ml-auto duration-200".concat(
           step === "summary" ? "" : " hidden"
         )}
       >

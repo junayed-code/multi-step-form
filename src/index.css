@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --container-width-max: 64rem;
+    --container-height-min: 40rem;
+    --sidebar-header-margin-buttom: 3rem;
+  }
+
   /* Remove Number input arrows */
   /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,

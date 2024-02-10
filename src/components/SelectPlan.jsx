@@ -28,7 +28,7 @@ function SelectPlan({ membership, planOption, dispatch }) {
         ))}
       </div>
 
-      <div className="mt-8 py-3 px-2 flex items-center justify-center gap-x-7 bg-indigo-50 rounded-md">
+      <div className="mt-8 py-3 px-2 flex items-center justify-center gap-x-7 bg-slate-100 rounded-md">
         <span
           className={`font-bold${
             planOption === "monthly" ? "" : " text-slate-400"
